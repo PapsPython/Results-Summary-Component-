@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Results Summary Components</title>
+  <!--google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <!--fontAwesome-->
+  <script src="https://kit.fontawesome.com/39bc8958de.js" crossorigin="anonymous"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main>
+    <section class="avgscorereport">
+      <p>Your Result</p>
+      <div class="averagestat">
+        <p><span> 76 </span> <br /> of 100</p>
+      </div>
+      <div class="scorecomparison">
+        <p id="remarks">Great</p>
+        <p> You scored higher than 65% of the </br> people who have taken these
+          tests
+        </p>
+      </div>
+    </section>
+    <section class="scorebreakdown">
+      <p style="color:black;"> Summary </p>
+      <div id="reaction" class="unitscore">
+        <p> <i class=" fa fa-thin fa-bolt-lightning"></i> Reaction </p>
+        <p class="rightside"> 80 <span> / 100</span></p>
+      </div>
+      <div id="memory" class="unitscore">
+        <p><i class=" fa fa-thin fa-brain"></i> Memory </p>
+        <p class="rightside"> 80 <span> / 100 </span></p>
+      </div>
+      <div id="verbal" class="unitscore">
+        <p><i class=" fa fa-thin fa-comment"></i>Verbal</p>
+        <p class="rightside"> 80 <span> / 100 </span></p>
+      </div>
+      <div id="visual" class="unitscore">
+        <p><i class="fa fa-thin fa-eye"></i>Visual</p>
+        <p class="rightside"> 80<span> / 100 </span></p>
+      </div>
+      <button> Continue </button>
+    </section>
+  </main>
+  <footer>
+    <p> Built By Papa Yaw Owusu</p>
+  </footer>
+
+  <!--<script>
+window.onload = function () {
+  var span = document.createElement('span');
+
+  span.className = 'fa';
+  span.style.display = 'none';
+  document.body.insertBefore(span, document.body.firstChild);
+  
+  alert(window.getComputedStyle(span, null).getPropertyValue('font-family'));
+    
+  document.body.removeChild(span);
+};
+</script>-->
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
